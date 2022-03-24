@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+.header {
+  width: 100%;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  box-shadow: 0px 2px 1px rgba(65, 81, 100, 0.15);
+  background-color: #fff;
+}
+.header-container {
+  max-width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container__report {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container__report h2 {
+  color: #363E48;
+  margin-left: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.main {
+  width: 100%;
+  margin-top: 40px;
+}
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-container-data {
+  width: 248px;
+  background-color: #fff;
+}
+.main-container-data__user {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+.main-container-data__user .user-title p {
+  font-size: 12px;
+  font-weight: 700;
+}
+.main-container-data__user .user-name h3 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #363E48;
+  line-height: 24px;
+}
+
+/*# sourceMappingURL=app.css.map */

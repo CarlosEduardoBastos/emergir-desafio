@@ -1,0 +1,29 @@
+@use "../base/variables";
+@use "layouts-mixins";
+
+.header{
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    box-shadow: 0px 2px 1px rgba(65, 81, 100, 0.15);
+    background-color: variables.$section-color;
+
+    &-container{
+        max-width: variables.$max-width;
+        @include layouts-mixins.center-content;
+        
+
+        &__report{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            h2{
+                color: variables.$main-color;
+                margin-left: 8px;
+                font-size: variables.$main-size;
+                font-weight: 700;
+            }
+        }
+    }
+}

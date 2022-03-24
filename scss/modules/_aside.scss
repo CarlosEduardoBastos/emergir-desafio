@@ -1,0 +1,35 @@
+@use "../base/variables";
+@use "../layouts/layouts-mixins";
+
+.main{
+    width: 100%;
+    margin-top: 40px;
+    
+
+    &-container{
+        @include layouts-mixins.center-content;
+
+        &-data{
+            width: 248px;
+            background-color: variables.$section-color;
+
+            &__user{
+                display: flex;
+                flex-direction: column;
+                padding: 16px;
+
+                .user-title p{
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+                .user-name h3{
+                    font-size: variables.$tertiary-size;
+                    font-weight: 400;
+                    color: variables.$main-color;
+                    line-height: 24px;
+                }
+            }
+        }
+        
+    }
+}

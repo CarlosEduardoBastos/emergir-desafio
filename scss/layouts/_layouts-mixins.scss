@@ -1,0 +1,9 @@
+@use "../base/variables";
+
+@mixin center-content{
+    max-width: variables.$max-width;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
