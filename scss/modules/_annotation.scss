@@ -1,0 +1,61 @@
+@use "../base/variables";
+
+.content{
+    .content-title{
+        position: relative;
+        bottom: 26px;
+        left: 0;
+        color: variables.$main-color;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .content-annotation-container{
+        position: absolute;
+        top: 137px;
+        display: flex;
+
+        
+        .content-annotation{
+            width: 380px;
+            height: 183px;
+            background-color: #fff;
+            margin-right: 16px;
+
+            
+            border-radius: 8px;
+            padding: 16px;
+            &__title{
+                display: flex;
+    
+                h4{
+                    font-size: variables.$tertiary-size;
+                    color: variables.$main-color;  
+                }
+                
+            }
+            .content-annotation__imgs{
+                display: flex;
+                align-items: center;
+    
+                .annotation-img{
+                    margin: 8px 16px 8px 0px;
+    
+                    img{
+                        border-radius: 4px;
+                    }
+                }
+            
+            }
+            .content-annotation__description p{
+                font-size: 14px;
+                font-weight: 400;
+                color: #415164;
+            }
+            
+        }
+        .content-2{
+            height: 234px;
+        }
+    }
+    
+}

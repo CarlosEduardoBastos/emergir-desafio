@@ -9,6 +9,7 @@
         // @include layouts-mixins.center-content;
         max-width: variables.$max-width2;
         margin: 66px auto;
+        display: flex;
 
         &-data{
             width: 248px;
@@ -119,6 +120,9 @@
                     margin-right: 8px;
                 }
             }
+        }
+        .content{
+            margin: 0px 24px;
         }
         
         

@@ -42,6 +42,7 @@ body {
 .main-container {
   max-width: 982px;
   margin: 66px auto;
+  display: flex;
 }
 .main-container-data {
   width: 248px;
@@ -156,6 +157,56 @@ body {
 }
 .main-container-data .main-container-data__button img {
   margin-right: 8px;
+}
+.main-container .content {
+  margin: 0px 24px;
+}
+
+.content .content-title {
+  position: relative;
+  bottom: 26px;
+  left: 0;
+  color: #363E48;
+  font-size: 20px;
+  font-weight: 600;
+}
+.content .content-annotation-container {
+  position: absolute;
+  top: 137px;
+  display: flex;
+}
+.content .content-annotation-container .content-annotation {
+  width: 380px;
+  height: 183px;
+  background-color: #fff;
+  margin-right: 16px;
+  border-radius: 8px;
+  padding: 16px;
+}
+.content .content-annotation-container .content-annotation__title {
+  display: flex;
+}
+.content .content-annotation-container .content-annotation__title h4 {
+  font-size: 16px;
+  color: #363E48;
+}
+.content .content-annotation-container .content-annotation .content-annotation__imgs {
+  display: flex;
+  align-items: center;
+}
+.content .content-annotation-container .content-annotation .content-annotation__imgs .annotation-img {
+  margin: 8px 16px 8px 0px;
+}
+.content .content-annotation-container .content-annotation .content-annotation__imgs .annotation-img img {
+  border-radius: 4px;
+}
+.content .content-annotation-container .content-annotation .content-annotation__description p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #415164;
+}
+.content .content-annotation-container .content-2 {
+  height: 234px;
 }
 
 /*# sourceMappingURL=app.css.map */
