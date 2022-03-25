@@ -1,0 +1,100 @@
+@use "../base/variables";
+
+.events{
+    width: 776px;
+    margin: 16px;
+    h2{
+        font-weight: 600;
+        font-size: 20px;
+        color: variables.$main-color;
+    }
+    .content-title{
+        font-size: 20px;
+    }
+    .events-content{
+        background-color: #fff;
+        padding: 16px;
+        height: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        margin-top: 4px;
+
+        //
+        .events-content-data{
+            &__title{
+                display: flex;
+
+                h2{
+                    margin-right: 16px;
+                }
+                div{
+                    width: 51px;
+                    height: 22px;
+                    background: #FFFFFF;
+                    border: 1px solid #E7E8EF;
+                    border-radius: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: #798AA4;
+                    }
+                }
+            }
+            .events-content-data__text p{
+                font-weight: 400;
+                font-size: 12px;
+                color: #627389;
+                margin: 4px 0 6px 0;
+            }
+            .events-content-data__button button{
+                width: 65px;
+                height: 16px;
+                color: #57760A;
+                border: 1px solid #739E08;
+                border-radius: 32px;
+                font-size: 12px;
+                font-family: 'Roboto';
+            }
+        }
+        //
+        .planting-data{
+            width: 242px;
+            border-right: 1px solid #DFE0E7;
+            border-left: 1px solid #DFE0E7;
+    
+            .planting-data-container{
+                padding: 16px;
+                .content-data{
+                    display: flex;
+                    align-items:center;
+                    justify-content: space-between;
+
+
+                    p{
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: variables.$text-color;
+                    }
+                    span{
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: #798AA4;
+                    }
+                }
+            }
+    
+        }
+        .arrow{
+            width: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+}

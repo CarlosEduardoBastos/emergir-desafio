@@ -1,60 +1,70 @@
 @use "../base/variables";
 
-.content{
+.main-section{
+    // margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+
+    //title
     .content-title{
-        position: relative;
-        bottom: 26px;
-        left: 0;
-        color: variables.$main-color;
+        position: absolute;
+        top: 110px;
+        left: 404px;
         font-size: 20px;
         font-weight: 600;
+        color: variables.$main-color;
     }
-    .content-annotation-container{
-        position: absolute;
-        top: 137px;
-        display: flex;
+    //
 
-        
-        .content-annotation{
-            width: 380px;
-            height: 183px;
-            background-color: #fff;
-            margin-right: 16px;
+    .content{
+        width: 800px;
+        .content-annotation-container{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            ///
+            .content-annotation{
+                padding: 16px;
+                width: 380px;
+                height: 183px;
+                margin-right: 16px;
+                margin-left: 16px;
+                background: #FFFFFF;
+                border-radius: 8px;
 
-            
-            border-radius: 8px;
-            padding: 16px;
-            &__title{
-                display: flex;
-    
-                h4{
-                    font-size: variables.$tertiary-size;
-                    color: variables.$main-color;  
-                }
-                
-            }
-            .content-annotation__imgs{
-                display: flex;
-                align-items: center;
-    
-                .annotation-img{
-                    margin: 8px 16px 8px 0px;
-    
-                    img{
-                        border-radius: 4px;
+
+                .content-annotation__title{
+                    display: flex;
+                    margin-bottom: 8px;
+                    h4{
+                        font-size: variables.$tertiary-size;
+                        font-weight: 700;
+                        color: #363E48;
                     }
                 }
-            
+                .content-annotation__imgs{
+                    display: flex;
+                    img{
+                        margin-right: 16px;
+                    }
+                }
+                .content-annotation__description p{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #415164;
+                }
             }
-            .content-annotation__description p{
-                font-size: 14px;
-                font-weight: 400;
-                color: #415164;
+            .content-2{
+                height: 230px;
+                margin: 0;
             }
-            
-        }
-        .content-2{
-            height: 234px;
+            .content-3{
+                height: 280px;
+            }
+            .content-4{
+                height: 125px;
+                margin: 0;
+            }
         }
     }
     

@@ -1,0 +1,131 @@
+@use "../base/variables";
+@use "../layouts/layouts-mixins";
+@use "../modules/modules-mixins";
+
+.main{
+    width: 100%;
+    .main-content{
+        max-width: variables.$max-width2;
+        margin: 66px auto;
+        display: flex;
+
+        .main-container-data{
+            width: 248px;
+            height: 486px;
+            background-color: variables.$section-color;
+            margin-bottom: 16px;
+            border-radius: 8px;
+
+            &__user{
+                @include modules-mixins.asid-content;
+                border-bottom: 1px solid #E7E8EF;
+
+
+                .user-title p{
+                    @include modules-mixins.title;
+                }
+                .user-name h3{
+                    @include modules-mixins.title-h3;
+                }
+                .user-size p{
+                    color: #798AA4;
+                    font-size: 14px;
+                    font-weight: 400;
+
+                }
+            }
+        }
+        //
+        .main-container-data__number{
+            display: flex;
+            padding: 16px;
+            justify-content: space-between;
+            border-bottom: 1px solid #E7E8EF;
+            p{
+                @include modules-mixins.title;
+            }
+            h3{
+                @include modules-mixins.title-h3;
+                                    
+            }
+            .data-farm{
+                
+                .accomplished{
+                    margin: 10px 0;
+                }
+                h2{
+                    font-size: variables.$tertiary-size;
+                    font-weight: 700;
+                    color: variables.$text-color;
+                }
+                .rain-content{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 72px;
+                    margin-bottom: 5px;
+                }
+                .rain{
+                    p{
+                        font-size: 12px;
+                        color: #627389;
+                        font-weight: 400;
+                    }
+                }
+            }
+            .data-harvest{
+                margin-right: 38px;
+            }
+            .radius{
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background-color: #F5F6FA;
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                color: #798AA4;
+                margin: 20px 5px;
+                border: 1px solid #DFE0E7;
+            }
+        
+        }
+        .main-container-data__description{
+            @include modules-mixins.asid-content;
+            border-bottom: 1px solid #E7E8EF;
+
+            .description-title{
+                @include modules-mixins.title;
+            }
+            .description{
+                font-size: 14px;
+                font-weight: 400;
+                color: variables.$p-color;
+            }
+        }
+        .container-button{
+            width: 216px;
+            height: 32px;
+            margin: 16px auto;
+            .main-container-data__button{
+                
+                width: 216px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                background-color: #fff;
+                border-radius: 6px;
+                border: 1px solid #C8CED8;
+
+                img{
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}
