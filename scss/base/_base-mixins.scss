@@ -2,5 +2,21 @@
     @media (max-width: 425px){
         @content
     }
-}
+};
 
+@mixin tablet{
+    @media (max-width: 768px){
+        @content
+    }
+};
+@mixin tablet-2{
+    @media (max-width: 688px){
+        @content
+    }
+};
+
+@mixin desctop{
+    @media (max-width: 960px){
+        @content
+    }
+}

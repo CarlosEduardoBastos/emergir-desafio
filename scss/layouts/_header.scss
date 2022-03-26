@@ -9,8 +9,11 @@
     box-shadow: 0px 2px 1px rgba(65, 81, 100, 0.15);
     background-color: variables.$section-color;
 
-    @include base-mixins.mobile{
-        width: 100%;
+    @include base-mixins.tablet{
+        padding: 10px 16px;
+    }
+    @include base-mixins.desctop{
+        padding: 10px 16px;
     }
 
     &-container{
@@ -28,6 +31,9 @@
                 margin-left: 8px;
                 font-size: variables.$main-size;
                 font-weight: 700;
+                @include base-mixins.mobile{
+                    font-size: 16px;
+                }
             }
         }
     }

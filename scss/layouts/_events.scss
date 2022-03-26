@@ -1,12 +1,19 @@
 @use "../base/variables";
+@use "../base/base-mixins";
 
 .events{
-    width: 776px;
     margin: 16px;
+
+    @include base-mixins.tablet{
+        width: 355px;
+    }
     h2{
         font-weight: 600;
         font-size: 20px;
         color: variables.$main-color;
+        @include base-mixins.mobile{
+            margin-bottom: 8px;
+        }
     }
     .content-title{
         font-size: 20px;
@@ -66,6 +73,9 @@
             width: 242px;
             border-right: 1px solid #DFE0E7;
             border-left: 1px solid #DFE0E7;
+            @include base-mixins.tablet{
+                display: none;
+            }
     
             .planting-data-container{
                 padding: 16px;

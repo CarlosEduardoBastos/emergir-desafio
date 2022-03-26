@@ -1,6 +1,7 @@
 @use "../base/variables";
 @use "../layouts/layouts-mixins";
 @use "../modules/modules-mixins";
+@use "../base/base-mixins";
 
 .main{
     width: 100%;
@@ -9,12 +10,33 @@
         margin: 66px auto;
         display: flex;
 
+        @include base-mixins.mobile{
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        @include base-mixins.tablet-2{
+            flex-direction: column;
+            margin: 20px auto;
+        }
+
         .main-container-data{
             width: 248px;
             height: 486px;
             background-color: variables.$section-color;
             margin-bottom: 16px;
             border-radius: 8px;
+            @include base-mixins.tablet{
+                margin: 0 16px 0 19px;
+            }
+            @include base-mixins.mobile{
+                flex-grow: 2;
+                margin: 16px;
+                width: 365px;
+            }
+            @include base-mixins.tablet-2{
+                width: 372px;
+                margin-bottom: 8px;
+            }
 
             &__user{
                 @include modules-mixins.asid-content;
