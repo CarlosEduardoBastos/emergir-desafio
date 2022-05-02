@@ -14,7 +14,6 @@ export async function createTalhoes(getNotes, getPlantetion) {
       platetionRes.results.forEach((dataId) => {
         if (item.location.id === dataId.id) {
           imgArr.push(item);
-          isActive = true;
         }
       });
     });
