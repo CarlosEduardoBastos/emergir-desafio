@@ -3,67 +3,43 @@
 
 
 .main-section{
-    // margin: 0 8px;
     display: flex;
     flex-direction: column;
 
-    //title
-    .content-title{
-        position: absolute;
-        top: 110px;
-        left: 404px;
-        font-size: 20px;
-        font-weight: 600;
-        color: variables.$main-color;
-        
-        @include base-mixins.tablet{
-            top: 90px;
-            left: 304px;
-        }
-        @include base-mixins.desctop{
-            left: 300px;
-            top: 90px;
-        }
-        @include base-mixins.mobile{
-            position: relative;
-            left: 24px;
-            top: -9px;
-            width: 300px;
-        }
-        @include base-mixins.tablet-2{
-            position: relative;
-            top: -5px;
-            left: 15px;
-            width: 300px;
-
-        }
-    }
-    //
-
     .content{
         max-width: 800px;
+        margin-bottom: 40px;
+        .content-title{
+
+            font-size: 20px;
+            margin-left: 16px;
+            font-weight: 600;
+            color: variables.$main-color;
+        }
 
         @include base-mixins.tablet{
             width: 100%;
         }
         .content-annotation-container{
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
-            ///
             .content-annotation{
                 padding: 16px;
-                width: 380px;
-                height: 183px;
+                width: 40%;
                 margin-right: 16px;
                 margin-left: 16px;
+                margin-top: 8px;
                 background: #FFFFFF;
                 border-radius: 8px;
                 
                 @include base-mixins.tablet-2{
-                    width: 579px;
+                    // width: 579px;
+                    width: 100%;
                 }
                 @include base-mixins.tablet{
-                    width: 365px;
+                    // width: 365px;
+                    width: 100%;
                 }
                 
 
@@ -79,9 +55,10 @@
                 }
                 .content-annotation__imgs{
                     display: flex;
-                    img{
-                        margin-right: 16px;
-                    }
+                    flex-wrap: wrap;
+                    // img{
+                    //     margin-right: 16px;
+                    // }
                 }
                 .content-annotation__description p{
                     font-size: 14px;
@@ -89,46 +66,66 @@
                     color: #415164;
                 }
             }
-            .content-1{
-                width: 270px;
-                @include base-mixins.tablet{
-                    width: 365px;
-                }
-                
-
-            }
-            .content-2{
-                height: 230px;
-                margin: 0;
-                
-                @include base-mixins.tablet{
-                    margin: 16px;
-                }
-                @include base-mixins.desctop{
-                    margin: 16px;
-                }
-            }
-            .content-3{
-                height: 280px;
-                @include base-mixins.tablet{
-                    margin: 16px;
-                }
-                @include base-mixins.desctop{
-                    margin: 16px;
-                }
-            }
-            .content-4{
-                height: 135px;
-                width: 300px;
-                margin: 0;
-                @include base-mixins.tablet{
-                    margin: 16px;
-                }
-                @include base-mixins.desctop{
-                    margin: 16px;
-                }
-            }
         }
+        
     }
     
 }
+
+.content-annotation-events{
+    
+        max-width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        
+            
+            .content-annotation{
+                padding: 16px;
+                max-width: 350px;
+            @include base-mixins.mobile{
+                width: 100%;
+            }
+            @include base-mixins.tablet-2{
+                width: 100%;
+            }
+                margin-top: 8px;
+                background: #FFFFFF;
+                border-radius: 8px;
+                
+                @include base-mixins.tablet-2{
+                    // width: 579px;
+                    width: 100%;
+                }
+                @include base-mixins.tablet{
+                    // width: 365px;
+                    width: 100%;
+                }
+                .content-annotation__title{
+                    display: flex;
+                    margin-bottom: 8px;
+                    h4{
+                        font-size: variables.$tertiary-size;
+                        font-weight: 700;
+                        color: #363E48;
+                    }
+                }
+                .content-annotation__imgs{
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                    img{
+                        margin: 8px;
+                    }
+                }
+                .content-annotation__description p{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #415164;
+                }
+            
+        }
+        
+    }
+

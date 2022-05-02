@@ -2,12 +2,20 @@
 @use "../layouts/layouts-mixins";
 @use "../modules/modules-mixins";
 @use "../base/base-mixins";
-
+.main-conteiner-body{
+    z-index: 2;
+}
 .main{
     width: 100%;
+    flex: 1;
+    .main-container{
+        margin-bottom: 25px;
+        
+
+    }
     .main-content{
         max-width: variables.$max-width2;
-        margin: 66px auto;
+        margin: 37px auto;
         display: flex;
 
         @include base-mixins.mobile{
@@ -21,20 +29,15 @@
 
         .main-container-data{
             width: 248px;
-            height: 486px;
             background-color: variables.$section-color;
-            margin-bottom: 16px;
+            margin-top: 20px;
             border-radius: 8px;
-            @include base-mixins.tablet{
-                margin: 0 16px 0 19px;
-            }
             @include base-mixins.mobile{
                 flex-grow: 2;
-                margin: 16px;
-                width: 365px;
+                width: 100%;
             }
             @include base-mixins.tablet-2{
-                width: 372px;
+                width: 100%;
                 margin-bottom: 8px;
             }
 

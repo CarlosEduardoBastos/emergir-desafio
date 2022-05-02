@@ -3,9 +3,10 @@
 
 .events{
     margin: 16px;
+    
 
     @include base-mixins.tablet{
-        width: 355px;
+        width: 90%;
     }
     h2{
         font-weight: 600;
@@ -30,8 +31,10 @@
 
         //
         .events-content-data{
+            flex: 2;
             &__title{
                 display: flex;
+                
 
                 h2{
                     margin-right: 16px;
@@ -71,6 +74,7 @@
         //
         .planting-data{
             width: 242px;
+            flex: 1;
             border-right: 1px solid #DFE0E7;
             border-left: 1px solid #DFE0E7;
             @include base-mixins.tablet{
@@ -104,7 +108,60 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            .active{
+                transform: rotate(180deg);
+            }
+        
+
+            // img{
+
+
+            //     .giro{
+
+            //         animation: girou;
+            //         @keyframes girou {
+            //             from{
+            //                 transform: rotate(0deg);
+            //             }
+            //             to{
+            //                 transform: rotate(0deg);
+            //             }
+            //         }
+            //     }
+            // }
+            // .cima{
+                
+            // }
+            // .baixo{
+            //     background: url(../../img/icon.svg);
+
+            // }
+           
+
+            // .active{
+            //     img{
+            //        animation: girar 1s; 
+            //     }
+                
+            // }
+            // img{
+            //     animation: girar 1s; 
+            // }
+            // @keyframes girar{
+            //     from{
+            //         transform: translate(0deg);
+            //     }
+            //     to{
+            //         transform: translate(360deg);
+            //     }
+            // }
         }
+        // .baixo{
+        //     
+
+        // }
+        
     }
     
 }
