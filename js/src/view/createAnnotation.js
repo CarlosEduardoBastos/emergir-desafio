@@ -1,6 +1,5 @@
 export async function createEvents(getNotes) {
   const { dataNote } = await getNotes("notes");
-  let value = "";
   dataNote.results.forEach((result) => {
     if (result.location_type === "Farm") {
       createAnnotation(result);
