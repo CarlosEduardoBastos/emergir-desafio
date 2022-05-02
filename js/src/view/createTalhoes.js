@@ -23,7 +23,6 @@ export async function createTalhoes(getNotes, getPlantetion) {
       resF.attachments.images.forEach((res) => imgsA.push(res.thumb_url));
     });
 
-    console.log(element, index);
     // verificando se o annotation existe
     dataNote.results.forEach((noteElement) => {
       if (element.id === noteElement.location.id) {

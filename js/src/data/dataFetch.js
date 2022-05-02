@@ -47,7 +47,6 @@ export async function getFarm() {
   try {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data);
 
     return { response, data };
   } catch (error) {

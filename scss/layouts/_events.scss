@@ -22,14 +22,12 @@
     .events-content{
         background-color: #fff;
         padding: 16px;
-        height: 88px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         border-radius: 8px;
         margin-top: 4px;
 
-        //
         .events-content-data{
             flex: 2;
             &__title{
